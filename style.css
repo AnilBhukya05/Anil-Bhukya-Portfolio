@@ -264,7 +264,7 @@ a {
 }
 
 .card-content {
-    padding: 15px;
+    padding: 10px;
     position: relative;
 }
 
@@ -281,16 +281,16 @@ a {
     display: inline-block;
     background: #333;
     color: #fff;
-    padding: 5px 12px;
+    padding: 5px 8px;
     border-radius: 6px;
     font-size: 0.9rem;
-    margin-right: 8px;
+    margin-right: 2px;
 }
 
 .card-btn {
     position: absolute;
     right: 15px;
-    bottom: 22px;
+    bottom: 56px;
     background: #3b5765;
     color: #cfb0b0;
     padding: 5px 15px;
@@ -676,3 +676,4 @@ footer {
         gap: 5px;
     }
 }
+
