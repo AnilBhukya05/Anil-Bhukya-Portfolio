@@ -9,7 +9,10 @@
 
 body {
     background: rgb(28, 22, 22);
+    /* background: linear-gradient(#5b8595, #1e1e1e); */
+    /* transition: opacity 2s ease; */
 }
+
 
 
 /* Header Section  */
@@ -273,24 +276,25 @@ a {
     font-size: 1.2rem;
 }
 
-.tags {
-    margin: 10px 0;
+.tags{
+  margin: 10px 0;
+  display: inline-grid;
+  gap: 8px;
 }
 
-.tags span {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    margin-right: 2px;
+.tags span{
+  display: block;
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
 
 .card-btn {
     position: absolute;
-    right: 15px;
-    bottom: 56px;
+    right: 40px;
+    bottom: 37px;
     background: #3b5765;
     color: #cfb0b0;
     padding: 5px 15px;
@@ -654,7 +658,6 @@ footer {
     .card-sm {
         width: 100%;
     }
-
     .contact {
         flex-direction: column;
         padding: 20px;
@@ -676,4 +679,5 @@ footer {
         gap: 5px;
     }
 }
+
 
