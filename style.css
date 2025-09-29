@@ -26,8 +26,8 @@ header {
 }
 
 .logo {
-    padding: 3px 15px;
-    margin: 10px;
+    padding: 0px 15px;
+    margin: 20px;
 }
 
 .btn {
@@ -504,8 +504,8 @@ footer {
 }
 
 .logo img {
-    width: 93px;
-    height: 95px;
+    width: 70px;
+    height: 70px;
 }
 
 .copyright {
@@ -679,6 +679,5 @@ footer {
         gap: 5px;
     }
 }
-
 
 
