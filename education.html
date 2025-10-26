@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Education</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      background: rgb(28, 22, 22);
+      margin: 0;
+      padding: 50px 0;
+      font-family: 'Parkinsans', sans-serif;
+    }
+
+    .logo {
+      padding: 0px 15px;
+      margin: 20px;
+      filter: invert(1);
+    }
+
+    .logo img {
+      width: 70px;
+      height: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 80px;
+      color: brown;
+    }
+
+    .timeline-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 5px;
+      height: 100%;
+      background-color: #a6aaaf;
+      z-index: 0;
+      border-radius: 2rem;
+    }
+
+    .event-wrapper {
+      position: relative;
+      margin-bottom: 180px;
+      display: flex;
+      width: 100%;
+    }
+
+    .event {
+      background: rgb(183, 177, 177);
+      padding: 15px 12px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      width: 45%;
+      transition: all 0.3s ease;
+    }
+
+    .event:hover {
+      background: rgba(255, 255, 255, 0.85);
+      transform: translateY(-10px);
+      /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    }
+
+    .event-left {
+      margin-right: auto;
+      text-align: right;
+    }
+
+    .event-right {
+      margin-left: auto;
+      text-align: left;
+    }
+
+    .event-dot {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 16px;
+      height: 16px;
+      background-color: #007BFF;
+      z-index: 2;
+    }
+
+
+    .back {
+      display: block;
+      margin: 50px auto 0;
+      text-decoration: none;
+      color: white;
+      background: #007BFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 150px;
+      text-align: center;
+    }
+
+    .back:hover {
+      background: #0056b3;
+    }
+
+    .about {
+      text-align: center;
+      color: white;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      min-height: 45vh;
+    }
+
+    .about p,
+    .about h4 {
+      max-width: 100%;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="assests/images/logo.png" alt="logo">
+  </div>
+
+  <h1> ' My Education ' </h1>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <!-- Event 1 -->
+    <div class="event-wrapper">
+      <div class="event event-right">Bachelor of Technology in <br>CMR Engineering College
+        <hr>
+        CGPA : 8.68 / 10.0 <br>
+        2021-2025
+      </div>
+      <div class="event-dot"></div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-wrapper">
+      <div class="event event-left">Intermediate - Kaloji Jr College <br> Marks : 930 / 1000 <br>
+        2019-2021</div>
+      <div class="event-dot"></div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-wrapper">
+      <div class="event event-right">Schooling - <br> SreeRushiVidhyalaya High School<br> CGPA : 8.7 / 10.0 <br> 2019
+      </div>
+      <div class="event-dot"></div>
+    </div>
+
+  </div>
+
+  <div class="about">
+    <h4>Computer Science Graduate | Aspiring Software Developer | SDE | Frontend Developer | Fullstack Developer</h4>
+
+    <p> Hi, I'm Anil Bhukya, a Computer Science graduate from CMR Engineering College with a strong foundation in
+      programming and software development. I've built skills in Python, Java, SQL, HTML/CSS, and React, and have earned
+      certifications in Java, Python, and Cybersecurity. I'm passionate about solving challenging problems, learning
+      from
+      experienced teams, and growing into a well-rounded developer. I'm currently looking for opportunities as a
+      Software
+      Development Engineer (SDE), Frontend Developer, or Fullstack Developer to apply my skills and contribute to
+      impactful projects.</p>
+
+    <p>💡 Outside of tech, I enjoy organizing events, photography, and video editing.</p>
+    <p>📫 anilbhukya1412@gmail.com</p>
+  </div>
+
+  <a class="back" href="index.html">Back to Home</a>
+
+</body>
+
+</html>
