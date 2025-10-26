@@ -28,6 +28,7 @@ header {
 .logo {
     padding: 0px 15px;
     margin: 20px;
+    filter: invert(1);
 }
 
 .btn {
@@ -505,7 +506,7 @@ footer {
 
 .logo img {
     width: 70px;
-    height: 70px;
+    height: 50px;
 }
 
 .copyright {
@@ -681,3 +682,68 @@ footer {
 }
 
 
+
+
+
+/* Mobile Hamburger Menu Slide-in from Right */
+@media (max-width: 600px) {
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 250px;
+    height: 100%;
+    background: rgba(28, 22, 22, 0.85);
+    backdrop-filter: blur(8px); 
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1200;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1300;
+    display: block;
+  }
+}
+
+
+section[id] {
+  scroll-margin-top: 100px; 
+}
+
+
+
+.menu-toggle {
+  display: none; 
+}
+
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: white;
+    z-index: 1300;
+    cursor: pointer;
+  }
+}
